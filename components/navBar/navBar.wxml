@@ -1,0 +1,11 @@
+<!--components/navBar/navBar.wxml-->
+<view class="navBar" style="height: {{ navBarHeight }}px">
+  <view class="statusBar" style="height:{{ statusBarHeightData }}px; background-color: {{ background }}"></view>
+  <view style="background-color: {{ navBackground }}; width: 100%;">
+    <view 
+      class="bar" 
+      style="height:{{menuHeight}}px; min-height:{{menuHeight}}px; line-height:{{menuHeight}}px; left:{{menuRight}}px; top:{{menuTop}}px; color:#333; width: {{menuLeft}}px;">
+      <slot></slot>
+    </view>
+  </view>
+</view>

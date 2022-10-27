@@ -1,0 +1,30 @@
+<view class="home">
+  <navBar background="{{ statusBarBackground }}" navBackground="{{ '#272A3B' }}">
+    <view class="home-navbar">
+      <view class="home-navbar-title">
+        早上好！张三先生
+      </view>
+      <image class="home-navbar-icon" src="/assets/images/icon/notice.png"></image>
+    </view>
+  </navBar>
+  <view class="hoem-container" style="padding-top: {{navBarHeight}}px;">
+    <!-- 轮播 -->
+    <swiper 
+      class="swiper" 	
+      indicator-dots="{{ true }}"
+      indicator-active-color="#89C002">
+      <swiper-item class="swiper-item">1</swiper-item>
+      <swiper-item class="swiper-item">2</swiper-item>
+      <swiper-item class="swiper-item">3</swiper-item>
+      <swiper-item class="swiper-item">4</swiper-item>
+    </swiper>
+    <!-- 功能区1 -->
+    <view class="hoem-container-cards">
+      <view class="card-item" wx:for="{{ cardsList }}" wx:key="item.id">
+        <!-- <view class="card-item-icon"></view> -->
+        <image class="card-item-icon" src="{{ item.img }}"></image>
+        <view class="card-item-title">{{ item.title }}</view>
+      </view>
+    </view>
+  </view>
+</view>
