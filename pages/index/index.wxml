@@ -20,11 +20,41 @@
     </swiper>
     <!-- 功能区1 -->
     <view class="hoem-container-cards">
-      <view class="card-item" wx:for="{{ cardsList }}" wx:key="item.id">
+      <view class="card-item" wx:for="{{ cardsList }}" wx:key="index">
         <!-- <view class="card-item-icon"></view> -->
         <image class="card-item-icon" src="{{ item.img }}"></image>
         <view class="card-item-title">{{ item.title }}</view>
       </view>
     </view>
+    <!-- 功能区2 -->
+    <view class="hoem-container-iconList">
+      <view 
+        class="icon-item" 
+        wx:for="{{ renterIconList }}"
+        wx:key="iconIdx"
+        wx:for-item="icon"
+        wx:for-index="iconIdx"
+        bindtap="handelOpenIconClick"
+        data-index="{{ iconIdx }}">
+        <view class="icon">
+          <block wx:if="{{  icon.imgList.length >= 4 }}">
+            <view class="icon-style" 
+              wx:for="{{ icon.imgList }}" 
+              wx:key="imgIdx"
+              wx:for-item="img"
+              wx:for-index="imgIdx"
+              >
+              <image class="icon-img-style" src="{{ img.imgUrl }}"></image>
+            </view>  
+          </block>
+          <block wx:else>
+            <image class="icon-img" src="{{ icon.imgList[0] }}"></image>
+          </block>
+        </view>
+        <view>{{ icon.title }}</view>
+      </view> 
+    </view>
+    <!-- icon弹窗 -->
+    <popup iconData="{{PopupList}}" show="{{ isShowPopup }}"></popup>
   </view>
 </view>

@@ -1,3 +1,7 @@
+.home {
+  min-height: 100vh;
+  background-color: #F1F1F1;
+}
 .home-navbar {
   display: flex;
   align-items: center;
@@ -58,4 +62,65 @@
   height: 80rpx;
   /* background-color: pink; */
   margin-bottom: 10rpx;
+}
+
+.hoem-container-iconList{
+  margin-top: 20rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+.icon-item {
+  width: 25%;
+  /* width: 170rpx; */
+  height: 170rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: 1px solid #F5F5F5;
+}
+
+.icon {
+  width: 88rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icon-style {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 3rpx;
+  background-color: #78BD02;
+}
+.icon-style:nth-child(1) {
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  border-bottom-left-radius: 15rpx;
+}
+.icon-style:nth-child(2) {
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  border-bottom-right-radius:15rpx;
+}
+.icon-style:nth-child(3) {
+  border-top-left-radius: 15rpx;
+  border-bottom-left-radius:15rpx;
+  border-bottom-right-radius:15rpx;
+}
+.icon-style:nth-child(4) {
+  border-top-right-radius: 15rpx;
+  border-bottom-left-radius:15rpx;
+  border-bottom-right-radius:15rpx;
+}
+.icon-img-style {
+  width: 100%;
+  height: 100%;
+}
+.icon-img {
+  width: 88rpx;
+  height: 88rpx;
 }

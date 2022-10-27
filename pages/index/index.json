@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "navBar": "/components/navBar/navBar"
+    "navBar": "/components/navBar/navBar",
+    "popup":"/components/popup/popup"
   },
   "navigationBarTextStyle":"white",
   "navigationStyle": "custom"

@@ -1,0 +1,13 @@
+<view class="popup" id="popup" catchtap="close" wx:if="{{ show }}">
+  <view class="contianer">
+    <view class="title"> {{ iconData.title }} </view>
+    <view class="list">
+      <view class="list-item" wx:for="{{ iconData.list }}" wx:key="index" catchtap="handelIconClick" data-item="{{ item }}">
+        <view class="img-view">
+          <image class="img" src="{{ item.imgUrl }}"></image>
+        </view>
+        <view class="img-title">{{ item.title }}</view>
+      </view>
+    </view>
+  </view>
+</view>
