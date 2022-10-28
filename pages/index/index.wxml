@@ -56,5 +56,6 @@
     </view>
     <!-- icon弹窗 -->
     <popup iconData="{{PopupList}}" show="{{ isShowPopup }}"></popup>
+    <tabbar tabbar="{{tabbar}}"></tabbar>
   </view>
 </view>

@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    tabbar: {},
     statusBarBackground: '#1A1A1A',
     navBarHeight: app.globalData.navBarHeight,
     cardsList:[
@@ -44,6 +45,7 @@ Page({
     PopupList:[]
   },
   onLoad() {
+    app.editTabbar();
     this.setIconListData();
     this.setImgList()
   },

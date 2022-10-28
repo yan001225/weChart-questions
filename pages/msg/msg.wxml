@@ -1,0 +1,5 @@
+<!--pages/msg/msg.wxml-->
+<view>
+  <text>pages/msg/msg.wxml</text>
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
